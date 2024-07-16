@@ -1,10 +1,13 @@
 import React from "react";
-import './styles/app.css'
+import './assets/styles/app.css'
+import Landing from './components/Landing';
+import Tabs from './components/Tabs'
 
-function App() {
+const App = () => {
   return (
     <div className="app">
-      hi
+      <Tabs />
+      <Landing />
     </div>
   );
 }
