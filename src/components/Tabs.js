@@ -30,7 +30,7 @@ const Tabs = () => {
 
     return(
         <div className="tabs">
-            <div className="universal-card">
+            <div className="tab-content">
                 {tabs[activeTab].content}
             </div>
             <div className="tabs-buttons">
