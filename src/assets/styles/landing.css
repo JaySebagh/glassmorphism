@@ -2,23 +2,6 @@
     margin-top: 50px;
 }
 
-.card-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    height: 400px;
-    /* background-color: rgba(43, 23, 52, 0.15); */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(149, 118, 163, 0.15)), to(rgba(43, 23, 52, 0.15)));
-    box-shadow: 0 8px 32px 0 rgba(118, 39, 202, 0.37);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
-    border-radius: 30px;
-    border: 2px solid rgba(255, 255, 255, 0.05);
-    margin-top: 30px;
-}
-
 .name{
     font-size: 1.6rem;
     line-height: 1.3;
