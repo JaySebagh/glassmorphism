@@ -3,7 +3,7 @@ import '../assets/styles/tabs.css';
 import Landing from './tab-content/Landing';
 import Skills from './tab-content/Skills';
 import TabContent3 from './tab-content/TabContent3';
-import TabContent4 from './tab-content/TabContent4';
+import Contact from './tab-content/Contact';
 
 const Tabs = () => {
     const tabs = [
@@ -21,7 +21,7 @@ const Tabs = () => {
         },
         {
             label: 'Contact',
-            content: <TabContent4 />
+            content: <Contact />
         }
     ]
 

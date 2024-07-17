@@ -5,7 +5,7 @@ import '../../assets/styles/landing.css'
 const Landing = () => {
     return(
         <div className="landing-container">
-            <img src={pfp} className="pfp"/>
+            <img src={pfp} className="pfp" alt="pfp"/>
             <div className="tab-container">
                 <h1 className="name">JEAN-FRANCOIS SEBAGH</h1>
                 <div className="code-container">

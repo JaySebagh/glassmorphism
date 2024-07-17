@@ -12,12 +12,10 @@
 }
 
 .code-container{
-    background-color: red;
     padding: 0 30px;
     border-radius: 15px;
     background-color: rgba(12, 6, 16, 0.20);
     backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
 }
 
 .code{
