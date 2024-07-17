@@ -1,27 +1,26 @@
 import React, { useState } from "react";
 import '../assets/styles/tabs.css';
-import '../assets/styles/universal.css';
-import TabContent1 from './tab-content/TabContent1';
-import TabContent2 from './tab-content/TabContent2';
+import Landing from './tab-content/Landing';
+import Skills from './tab-content/Skills';
 import TabContent3 from './tab-content/TabContent3';
 import TabContent4 from './tab-content/TabContent4';
 
 const Tabs = () => {
     const tabs = [
         {
-            label: 'Tab 1',
-            content: <TabContent1 />
+            label: 'Home',
+            content: <Landing />
         },
         {
-            label: 'Tab 2',
-            content: <TabContent2 />
+            label: 'Skills',
+            content: <Skills />
         },
         {
-            label: 'Tab 3',
+            label: 'Projects',
             content: <TabContent3 />
         },
         {
-            label: 'Tab 4',
+            label: 'Contact',
             content: <TabContent4 />
         }
     ]
