@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import '../../assets/styles/contact.css'
 
 const TabContent4 = () => {
+    const emailCopy = "jaysebagh@gmail.com"
+
+    const delay = async (ms) => {
+        return new Promise((resolve) => 
+            setTimeout(resolve, ms));
+    };
+    
+    const [copyText, setCopyText] = useState(" ");
+
+    const [fade, setFade] = useState(0)
+
     return(
         <div className="contact-container">
             <div className="site-container">
@@ -32,7 +43,21 @@ const TabContent4 = () => {
                     >Link<i class="fa fa-external-link fal" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div className="email">
+            <p className="copied"
+                fade={fade}
+                onAnimationEnd={() => setFade(0)}
+            >{copyText}</p>
+            <div
+                className="email"
+                onClick={ async () => {
+                    navigator.clipboard.writeText(emailCopy);
+                    setFade(1)
+                    setCopyText("COPIED!");
+                    await delay(300);
+                    setCopyText(" ");
+                }}
+                
+            >
                 JAYSEBAGH@GMAIL.COM
             </div>
         </div>
